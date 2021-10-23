@@ -1,0 +1,51 @@
+getgenv().AutoFarm  = true;
+
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location1 = CFrame.new (-56, 111, 1627)
+local location2 = CFrame.new (-30, 111, 1631)
+local location3 = CFrame.new (-6, 142, 1631) 
+local location4 = CFrame.new (11, 127, 1620)
+local location5 = CFrame.new (27, 131, 1595)
+local location6 = CFrame.new (40, 131, 1575)
+local location7 = CFrame.new (48, 146, 1566)
+local location8 = CFrame.new (61, 146, 1556)
+local location9 = CFrame.new (50, 137, 1539)
+local location10 = CFrame.new (35, 139, 1523)
+local location11 = CFrame.new (27, 137, 1498)
+local location12 = CFrame.new (35, 145, 1478)
+local location13 = CFrame.new (22, 152, 1466)
+local location14 = CFrame.new (137, 45 , -298)
+
+wait()
+player.CFrame = location14
+
+while AutoFarm == true do 
+    player.CFrame = location1
+    wait(1)
+    player.CFrame = location2
+    wait(1)
+    player.CFrame = location3
+    wait(1)
+    player.CFrame = location4
+    wait(1)
+    player.CFrame = location5
+    wait(1)
+    player.CFrame = location6
+    wait(1)
+    player.CFrame = location7
+    wait(1)
+    player.CFrame = location8
+    wait(1)
+    player.CFrame = location9
+    wait(1)
+    player.CFrame = location10
+    wait(1)
+    player.CFrame = location11
+    wait(1)
+    player.CFrame = location12
+    wait(1)
+    player.CFrame = location13
+    wait(1)
+    player.CFrame = location14
+    wait(1)
+end
