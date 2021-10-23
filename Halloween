@@ -67,6 +67,13 @@ local location63 = CFrame.new (-58.8260193, 111.423462, 1633.97998, 0.995094001,
 local location64 = CFrame.new (-58.8260193, 111.423462, 1633.97998, 0.995094001, 3.40900286e-08, -0.0989340395, -3.80401097e-08, 1, -3.804006e-08, 0.0989340395, 4.16168966e-08, 0.995094001)
     
 while AutoFarm == true do 
+        local args = {
+        [1] = "Teleport",
+        [2] = "EventSpawn"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+
     wait(0.5) 
     player.CFrame = location1
     wait(1)
@@ -99,67 +106,67 @@ while AutoFarm == true do
     player.CFrame = location1
     wait(1)
     player.CFrame = location15
-    wait(0.5)
+    wait(1)
     player.CFrame = location16
-    wait(0.5)
+    wait(1)
     player.CFrame = location17
-    wait(0.5)
+    wait(1)
     player.CFrame = location18
-    wait(0.5)
+    wait(1)
     player.CFrame = location19
-    wait(0.5)
+    wait(1)
     player.CFrame = location20
-    wait(0.5)
+    wait(1)
     player.CFrame = location21
-    wait(0.5)
+    wait(1)
     player.CFrame = location22
-    wait(0.5)
+    wait(1)
     player.CFrame = location23
-    wait(0.5)
+    wait(1)
     player.CFrame = location24
-    wait(0.5)
+    wait(1)
     player.CFrame = location25
-    wait(0.5)
+    wait(1)
     player.CFrame = location26
-    wait(0.5)
+    wait(1)
     player.CFrame = location27
-    wait(0.5)
+    wait(1)
     player.CFrame = location28
-    wait(0.5)
+    wait(1)
     player.CFrame = location29
-    wait(0.5)
+    wait(1)
     player.CFrame = location30
-    wait(0.5)
+    wait(1)
     player.CFrame = location31
-    wait(0.5)
+    wait(1)
     player.CFrame = location32
-    wait(0.5)
+    wait(1)
     player.CFrame = location33
-    wait(0.5)
+    wait(1)
     player.CFrame = location34
-    wait(0.5)
+    wait(1)
     player.CFrame = location35
-    wait(0.5)
+    wait(1)
     player.CFrame = location36
-    wait(0.5)
+    wait(1)
     player.CFrame = location37
-    wait(0.5)
+    wait(1)
     player.CFrame = location38
-    wait(0.5)
+    wait(1)
     player.CFrame = location39
-    wait(0.5)
+    wait(1)
     player.CFrame = location40
-    wait(0.5)
+    wait(1)
     player.CFrame = location41
-    wait(0.5)
+    wait(1)
     player.CFrame = location42
-    wait(0.5)
+    wait(1)
     player.CFrame = location43
-    wait(0.5)
+    wait(1)
     player.CFrame = location44
-    wait(0.5)
+    wait(1)
     player.CFrame = location45
-    wait(0.5)
+    wait(1)
     player.CFrame = location46
     wait(0.5)
     player.CFrame = location47
