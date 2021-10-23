@@ -13,6 +13,7 @@ local Tab = Window:NewTab("Latest Update")
 local Section = Tab:NewSection("Made Autofarm Less Buggy")
 local Section = Tab:NewSection("Added Auto Hatch")
 local Section = Tab:NewSection("Fixed Bugs")
+local Section = Tab:NewSection("Added LocalPlayer")
 
 
 
@@ -185,5 +186,32 @@ Section:NewButton("Stop Hatching Ghost Egg", "", function()
     wait(0.1)
     getgenv().TripleHellish = false;
 end)
+
+local Tab = Window:NewTab("Local Player")
+local Section = Tab:NewSection("Speed + JumpPower")
+Section:NewSlider("Walkspeed", "Walkspeed", 100, 24, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("JumpSpeed", "JumpSpeed", 65, 250, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpSpeed = s
+end)
+
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Settings")
+Section:NewKeybind("Toggle UI", "Toggles the User Interface", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+
+
+
+
+
+
+
+
+
+
 
 
