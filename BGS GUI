@@ -1,0 +1,184 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Slohub BGS", "DarkTheme")
+
+getgenv().SingleWisp = true;
+getgenv().TripleWisp = true;
+getgenv().SingleGhost = true;
+getgenv().TripleGhost = true;
+getgenv().SingleHellish = true;
+getgenv().TripleHellish = true;
+
+
+
+
+local Tab = Window:NewTab("Autofarms")
+local Section = Tab:NewSection("AutoBlow")
+Section:NewButton("Start Blowing", "Automatically Blows", function()
+        while true do wait()
+            local args = {
+            [1] = "BlowBubble"
+        }
+        
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+    end
+end)
+
+Section:NewButton("Auto Sell Bubbles", "Automatically Sells", function()
+    wait()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Auto Sell"; 
+        Text = "Only Sells If Near Sell Area";
+        Duration = "5";
+        }) 
+    while true do wait()
+        local args = {
+            [1] = "SellBubble",
+            [2] = "Sell"
+        }
+        
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+    end
+end)
+
+
+
+local Section = Tab:NewSection("Halloween Event")
+Section:NewButton("READ ME BEFORE AUTOFARMING", "", function()
+    wait()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "DISCORD"; 
+        Text = "DM Slo#9415 for Help";
+        Duration = math.huge;
+        })
+    wait()
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "READ ME"; 
+    Text = "Go through the halloween portal and stand still then turn on the autofarm"; -- what the text says (ofc)
+    Duration = math.huge;
+    })
+    wait()
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "DISCORD"; 
+    Text = "DM Slo#9415 for Help";
+    Duration = math.huge;
+    })
+end)    
+Section:NewButton("Start Autofarming", "Trick or Treat AutoFarm", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SloExploits/BGS-AutoFarm/main/Halloween", true))()
+end)
+
+Section:NewButton("Stop Autofarming", "Trick or Treat AutoFarm", function()
+    getgenv().AutoFarm  = false;
+end)
+
+local Tab = Window:NewTab("Eggs")
+local Section = Tab:NewSection("Wisp Egg")
+Section:NewButton("Enable Hatching Again", "", function()
+    getgenv().SingleWisp = true;
+    getgenv().TripleWisp = true;
+    getgenv().SingleGhost = true;
+    getgenv().TripleGhost = true;
+    getgenv().SingleHellish = true;
+    getgenv().TripleHellish = true;
+end)
+Section:NewButton("Single Hatch Wisp Egg", "", function()
+    
+    while SingleWisp == true do 
+        wait()
+            local args = {
+                [1] = "PurchaseEgg",
+                [2] = "Wisp Egg"
+            }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+    end
+end)
+
+Section:NewButton("Triple Hatch Wisp Egg", "", function()
+    
+    while TripleWisp == true do 
+        wait()
+            local args = {
+                [1] = "PurchaseEgg",
+                [2] = "Wisp Egg",
+                [3] = "Multi"
+            }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+
+    end
+end)
+
+
+Section:NewButton("Stop Hatching Wisp Egg", "", function()
+    getgenv().SingleWisp = false;
+    wait(0.1)
+    getgenv().TripleWisp = false;
+end)
+
+local Section = Tab:NewSection("Ghost Egg")
+
+Section:NewButton("Single Hatch Ghost Egg", "", function()
+    while SingleGhost == true do
+        wait()
+            local args = {
+                [1] = "PurchaseEgg",
+                [2] = "Ghost Egg"
+            }
+    
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+    end
+end)
+
+Section:NewButton("Triple Hatch Ghost Egg", "", function()
+    while SingleGhost == true do
+        wait()
+            local args = {
+                [1] = "PurchaseEgg",
+                [2] = "Ghost Egg",
+                [3] = "Multi"
+            }
+        
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+    end
+end)
+
+Section:NewButton("Stop Hatching Ghost Egg", "", function()
+    getgenv().SingleGhost = false;
+    wait(0.1)
+    getgenv().TripleGhost = false;
+end)
+
+local Section = Tab:NewSection("Hellish Egg")
+Section:NewButton("Triple Hatch Hellish Egg", "", function()
+    while TripleHellish == true do
+        wait()
+            local args = {
+                [1] = "PurchaseEgg",
+                [2] = "Hellish Egg",
+                [3] = "Multi"
+            }
+        
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+    end
+end)
+
+Section:NewButton("Single Hatch Hellish Egg", "", function()
+    while SingleHellish == true do
+        wait()
+            local args = {
+                [1] = "PurchaseEgg",
+                [2] = "Hellish Egg"
+            }
+            
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+    end
+end)
+
+Section:NewButton("Stop Hatching Ghost Egg", "", function()
+    getgenv().SingleHellish = false;
+    wait(0.1)
+    getgenv().TripleHellish = false;
+end)
+
+
