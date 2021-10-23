@@ -9,6 +9,11 @@ getgenv().SingleHellish = true;
 getgenv().TripleHellish = true;
 
 
+local Tab = Window:NewTab("Latest Update")
+local Section = Tab:NewSection("Made Autofarm Less Buggy")
+local Section = Tab:NewSection("Added Auto Hatch")
+local Section = Tab:NewSection("Fixed Bugs")
+
 
 
 local Tab = Window:NewTab("Autofarms")
