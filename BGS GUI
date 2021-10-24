@@ -3,7 +3,7 @@ local Window = Library.CreateLib("Qoucx Hub BGS", "DarkTheme")
 local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 local CrntPlr = game.Players.LocalPlayer
 
-if game.Players.LocalPlayer.Name == "deathshadow6345" and "dontusedrealname2" then
+if game.Players.LocalPlayer.Name == "deathshadow6345" or "dontusedrealname2" then
 	wait()
 	game.Players.LocalPlayer:Kick ("You are blacklisted")
 end
