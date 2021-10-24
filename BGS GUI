@@ -3,12 +3,6 @@ local Window = Library.CreateLib("Qoucx Hub BGS", "DarkTheme")
 local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 local CrntPlr = game.Players.LocalPlayer
 
-if game.Players.LocalPlayer.UserId == "274444904" or "2845165370" then
-	wait()
-	game.Players.LocalPlayer:Kick ("You are blacklisted")
-end
-
-
 
 local Tab = Window:NewTab("Latest Update")
 local Section = Tab:NewSection("Made by ! Qoucx#9415")
