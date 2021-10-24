@@ -80,137 +80,137 @@ while AutoFarm == true do
 
     game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
 
-    wait(0.4) 
+    wait(0.75) 
     player.CFrame = location1
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location2
-    wait(0.4)    
+    wait(0.75)    
     player.CFrame = location4
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location6
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location7
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location8
-    wait(0.4))
+    wait(0.75)
     player.CFrame = location9
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location10
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location11
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location12
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location13
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location14
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location1
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location15
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location16
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location17
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location18
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location19
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location20
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location21
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location22
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location23
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location24
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location25
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location26
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location27
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location28
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location29
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location30
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location31
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location32
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location33
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location34
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location35
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location36
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location37
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location38
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location39
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location40
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location41
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location42
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location43
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location44
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location45
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location46
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location47
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location48
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location49
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location50
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location51
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location52
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location53
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location54
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location55
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location56
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location57
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location58
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location59
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location60
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location61
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location62
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location63
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location64
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location65
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location66
-    wait(0.4)
+    wait(0.75)
     player.CFrame = location67
-    wait(0.4)
+    wait(0.75)
 end
