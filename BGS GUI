@@ -1,5 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Slohub BGS", "DarkTheme")
+local Window = Library.CreateLib("Qoucx Hub BGS", "DarkTheme")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 
 getgenv().SingleWisp = true;
 getgenv().TripleWisp = true;
@@ -7,11 +8,13 @@ getgenv().SingleGhost = true;
 getgenv().TripleGhost = true;
 getgenv().SingleHellish = true;
 getgenv().TripleHellish = true;
+getgenv().AutoChests = true;
 
 
 local Tab = Window:NewTab("Latest Update")
-local Section = Tab:NewSection("Made Autofarm Less Buggy")
-local Section = Tab:NewSection("Added Auto Hatch")
+local Section = Tab:NewSection("Made Autofarm Faster")
+local Section = Tab:NewSection("Added Teleports")
+local Section = Tab:NewSection("Auto Collect Chest")
 local Section = Tab:NewSection("Fixed Bugs")
 local Section = Tab:NewSection("Added LocalPlayer")
 
@@ -75,6 +78,93 @@ end)
 
 Section:NewButton("Stop Autofarming", "Trick or Treat AutoFarm", function()
     getgenv().AutoFarm  = false;
+end)
+
+local Section = Tab:NewSection("Auto Chests")
+Section:NewButton("Auto Chests", "", function()
+    while AutoChests == true do 
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "The Floating Island"
+            }
+        
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+        wait()
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "The Twilight"
+            }
+    
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+        wait()
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "XP Island"
+            }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+        wait()
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "The Void"
+            }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+        wait()
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "Atlantis"
+            }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+        wait()
+        local args = {
+            [1] = "CollectChestReward",
+            [2] = "Underworld"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+            wait()
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "Rainbow Land"
+            }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+        wait()
+        local args = {
+            [1] = "CollectChestReward",
+            [2] = "Mystic Forest"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+            wait()
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "Toy Land"
+            }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+            wait()
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "Candy Land"
+            }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+                wait()
+                local args = {
+                    [1] = "CollectChestReward",
+                    [2] = "Beach World"
+                }
+
+        game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+
+    end
+end)
+
+Section:NewButton("Stop Auto Chests", "", function()
+    getgenv().AutoChests = false;
 end)
 
 local Tab = Window:NewTab("Eggs")
@@ -187,13 +277,106 @@ Section:NewButton("Stop Hatching Ghost Egg", "", function()
     getgenv().TripleHellish = false;
 end)
 
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("Worlds")
+    Section:NewButton("Floating Island", "", function()
+        wait()
+        local args = {
+            [1] = "TeleportToCheckpoint",
+            [2] = "The Floating Island"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Halloween World", "", function()
+    wait()
+        local args = {
+            [1] = "Teleport",
+            [2] = "EventSpawn"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Space", "", function()
+    wait()
+        local args = {
+            [1] = "TeleportToCheckpoint",
+            [2] = "Space"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("The Twilight", "", function()
+    wait()
+        local args = {
+            [1] = "TeleportToCheckpoint",
+            [2] = "The Twilight"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+Section:NewButton("The Skylands", "", function()
+    wait()
+        local args = {
+            [1] = "TeleportToCheckpoint",
+            [2] = "The Skylands"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+Section:NewButton("Zen", "", function()
+    wait()
+        local args = {
+            [1] = "TeleportToCheckpoint",
+            [2] = "Zen"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("The Void", "", function()
+    wait()
+        local args = {
+            [1] = "TeleportToCheckpoint",
+            [2] = "The Void"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("XP Island", "", function()
+    wait()
+        local args = {
+            [1] = "TeleportToCheckpoint",
+            [2] = "XP Island"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Candy World", "", function()
+    wait()
+        local args = {
+            [1] = "Teleport",
+            [2] = "Candy LandSpawn"
+        }
+
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+
+
+
+
 local Tab = Window:NewTab("Local Player")
 local Section = Tab:NewSection("Speed + JumpPower")
 Section:NewSlider("Walkspeed", "Walkspeed", 100, 24, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-Section:NewSlider("JumpSpeed", "JumpSpeed", 65, 250, function(s) -- 500 (MaxValue) | 0 (MinValue)
+Section:NewSlider("JumpSpeed", "JumpSpeed", 250, 65, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpSpeed = s
 end)
 
@@ -202,16 +385,3 @@ local Section = Tab:NewSection("Settings")
 Section:NewKeybind("Toggle UI", "Toggles the User Interface", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-
-
-
-
-
-
-
-
-
-
-
-
-
