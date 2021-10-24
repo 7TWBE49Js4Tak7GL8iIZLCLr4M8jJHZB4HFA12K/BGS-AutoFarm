@@ -3,6 +3,26 @@ local Window = Library.CreateLib("Qoucx Hub BGS", "DarkTheme")
 local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 local CrntPlr = game.Players.LocalPlayer
 
+-- Blacklisting System 
+
+local playerName = game:GetService("Players").LocalPlayer.Name;
+local blacklistedNames = {
+  ["DeathShadow6345"] = true;
+  ["dontusedrealname2"] = true;
+  ["BlacklistedName3"] = true;
+  ["BlacklistedName4"] = true;
+  ["BlacklistedName5"] = true;
+  ["BlacklistedName6"] = true;
+  ["BlacklistedName7"] = true;
+  ["BlacklistedName8"] = true;
+  ["BlacklistedName9"] = true;
+  ["BlacklistedName10"] = true;
+  ["BlacklistedName11"] = true;
+}
+if (blacklistedNames[playerName]) then
+  game:GetService("Players").LocalPlayer:Kick("You are blacklisted!")
+end
+
 
 local Tab = Window:NewTab("Latest Update")
 local Section = Tab:NewSection("Made by ! Qoucx#9415")
