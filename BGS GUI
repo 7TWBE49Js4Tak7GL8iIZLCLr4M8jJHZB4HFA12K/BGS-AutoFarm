@@ -103,7 +103,7 @@ Section:NewButton("READ ME BEFORE AUTOFARMING", "", function()
 	wait()
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "DISCORD"; 
-		Text = "DM Slo#9415 for Help";
+		Text = "DM  ! Qoucx#9415 for Help";
 		Duration = math.huge;
 	})
 	wait()
@@ -115,7 +115,7 @@ Section:NewButton("READ ME BEFORE AUTOFARMING", "", function()
 	wait()
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "DISCORD"; 
-		Text = "DM Slo#9415 for Help";
+		Text = "DM ! Qoucx#9415 for Help";
 		Duration = math.huge;
 	})
 end)    
