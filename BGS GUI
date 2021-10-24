@@ -11,21 +11,22 @@ getgenv().SingleHellish = true;
 getgenv().TripleHellish = true;
 getgenv().AutoChests = true;
 getgenv().AutoChat = true;
+getgenv().LollyFarm = true;
 
 -- Blacklisted
 -- Pending On being blacklisted 'deathshadow6345', 'dontusedrealname2 '
-if game.Players.LocalPlayer.Name == "" then
+if game.Players.LocalPlayer.Name == "pp" then
 	wait()
 	game.Players.LocalPlayer:Kick ("You are blacklisted")
 end
 
-local startingid = syn.request({Method="GET",Url="https://pastebin.com/raw/hNpJfyFS"}).Body
+local startingid = syn.request({Method="GET",Url="https://raw.githubusercontent.com/SloExploits/BGS-AutoFarm/main/BGS%20GUI"}).Body
 spawn(function()
-while wait(4) do
-if startingid ~= syn.request({Method="GET",Url="https://pastebin.com/raw/hNpJfyFS"}).Body then
-game.Players.LocalPlayer:Kick("Script has been updated, Rejoin and Execute")
-end
-end
+	while wait(4) do
+		if startingid ~= syn.request({Method="GET",Url="https://raw.githubusercontent.com/SloExploits/BGS-AutoFarm/main/BGS%20GUI"}).Body then
+			game.Players.LocalPlayer:Kick("Script has been updated, Rejoin and Execute")
+		end
+	end
 end)
 
 
@@ -40,9 +41,7 @@ end)
 
 local Tab = Window:NewTab("Latest Update")
 local Section = Tab:NewSection("Made by ! Qoucx#9415")
-local Section = Tab:NewSection("Made Autofarm Faster")
-local Section = Tab:NewSection("Added Slight FPS Booster")
-local Section = Tab:NewSection("Added Trolling")
+local Section = Tab:NewSection("Added Lolly Farm")
 local Section = Tab:NewSection("Name Hider and More!")
 
 
@@ -104,8 +103,30 @@ Section:NewButton("Start Autofarming", "Trick or Treat AutoFarm", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SloExploits/BGS-AutoFarm/main/Halloween", true))()
 end)
 
-Section:NewButton("Stop Autofarming", "Trick or Treat AutoFarm", function()
+Section:NewButton("Stop Autofarming", "AutoFarm", function()
 	getgenv().AutoFarm  = false;
+end)
+
+local Section = Tab:NewSection("Lolly Farm")
+Section:NewButton("Start Autofarming Coins/Lollipops", "AutoFarm", function()
+	
+    getgenv().LollyFarm = true;
+
+	while LollyFarm == true do 
+		wait()
+		for _,pickup in pairs(game:GetService("Workspace").Pickups:GetChildren()) do
+			if pickup:IsA("MeshPart") and (player.Position-pickup.Position).magnitude <= 50 then
+				wait()
+				player.CFrame = pickup.CFrame
+            end
+		end
+	end
+end)
+
+Section:NewButton("Stop Autofarming", "AutoFarm", function()
+    wait()
+    getgenv().LollyFarm = false;
+    wait()
 end)
 
 local Section = Tab:NewSection("Auto Chests")
@@ -207,7 +228,7 @@ Section:NewButton("Enable Hatching Again", "", function()
 end)
 
 Section:NewButton("Stop Hatching", "", function()
-    getgenv().SingleWisp = false;
+	getgenv().SingleWisp = false;
 	getgenv().TripleWisp = false;
 	getgenv().SingleGhost = false;
 	getgenv().TripleGhost = false;
