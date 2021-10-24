@@ -268,14 +268,6 @@ Section:NewButton("Triple Hatch Ghost Egg", "", function()
 	end
 end)
 
-Section:NewButton("Stop Hatching Ghost Egg", "", function()
-	wait()
-	getgenv().SingleWisp = false;
-	wait(1)
-	getgenv.TripleGhost = false;
-	wait()
-end)
-
 local Section = Tab:NewSection("Hellish Egg")
 Section:NewButton("Triple Hatch Hellish Egg", "", function()
 	while TripleHellish == true do
@@ -300,14 +292,6 @@ Section:NewButton("Single Hatch Hellish Egg", "", function()
 
 		game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
 	end
-end)
-
-Section:NewButton("Stop Hatching Ghost Egg", "", function()
-	wait()
-	getgenv().SingleHellish = false;
-	wait(1)
-	getgenv.TripleHellish = false;
-	wait()
 end)
 
 local Tab = Window:NewTab("Teleports")
