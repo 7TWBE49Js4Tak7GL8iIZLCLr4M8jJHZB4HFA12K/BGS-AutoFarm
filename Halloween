@@ -79,7 +79,6 @@ while AutoFarm == true do
         }
 
     game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-
     wait(0.75) 
     player.CFrame = location1
     wait(0.75)
