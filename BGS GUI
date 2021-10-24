@@ -16,7 +16,7 @@ local Section = Tab:NewSection("Made Autofarm Faster")
 local Section = Tab:NewSection("Added Teleports")
 local Section = Tab:NewSection("Auto Collect Chest")
 local Section = Tab:NewSection("Fixed Bugs")
-local Section = Tab:NewSection("Added LocalPlayer")
+
 
 
 
