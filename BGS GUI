@@ -3,19 +3,7 @@ local Window = Library.CreateLib("Qoucx Hub BGS", "DarkTheme")
 local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 local CrntPlr = game.Players.LocalPlayer
 
-getgenv().SingleWisp = true;
-getgenv().TripleWisp = true;
-getgenv().SingleGhost = true;
-getgenv().TripleGhost = true;
-getgenv().SingleHellish = true;
-getgenv().TripleHellish = true;
-getgenv().AutoChests = true;
-getgenv().AutoChat = true;
-getgenv().LollyFarm = true;
-
--- Blacklisted
--- Pending On being blacklisted 'deathshadow6345', 'dontusedrealname2 '
-if game.Players.LocalPlayer.Name == "pp" then
+if game.Players.LocalPlayer.Name == "deathshadow6345" and "dontusedrealname2" then
 	wait()
 	game.Players.LocalPlayer:Kick ("You are blacklisted")
 end
@@ -392,8 +380,8 @@ Section:NewSlider("Walkspeed", "Walkspeed", 100, 24, function(s) -- 500 (MaxValu
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-Section:NewSlider("JumpSpeed", "JumpSpeed", 250, 65, function(s) -- 500 (MaxValue) | 0 (MinValue)
-	game.Players.LocalPlayer.Character.Humanoid.JumpSpeed = s
+Section:NewSlider("Jumppower", "Jumppower", 250, 65, function(s) -- 500 (MaxValue) | 0 (MinValue)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower= s
 end)
 
 Section:NewSlider("FOV", "Field Of View", 120, 70, function(s) -- 500 (MaxValue) | 0 (MinValue)
